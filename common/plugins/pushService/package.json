@@ -1,0 +1,60 @@
+{
+  "name": "pushService",
+  "version": "1.0.0",
+  "main": "backend",
+  "description": "A plugin for adding push service",
+  "author": "Robins Gupta",
+  "authorEmail": "robinskumar73@gmail.com",
+  "routeExposure": "/pushService",
+  "staticFiles": {
+    "css": {
+        "exampleCss" : "/pushService/style/example.css"
+      },
+    "js": {
+      "pushServiceRoute": "/pushService/scripts/routes/pushService.js",
+      "pushServiceController": "/pushService/scripts/controllers/pushService.js"
+    },
+    "moduleDependencies":{
+
+    },
+    "settings": "/pushService/settings.js"
+  },
+  "bodystructure": {
+    "asidebarHook": [],
+    "sidebarHook": ["/pushService/views/sidebarHook.html"],
+    "headerHook": [],
+    "footerHook":[]
+  },
+  "databases": {
+    "Application": "application",
+    "Notification": "notification",
+    "Push": "push",
+    "Installation": "installation"
+  },
+  "pluginDepedencies": {
+     
+  },
+
+  "PUSH_SERVICE_ID": "mapstrack-snaphy-push-application",
+  "USER_ID": "strongloop",
+  "APP_NAME": "MapstrackPushNotification",
+  "GCM_SERVER_API_KEY" : "AIzaSyAjI6E3xT9SKO84W-0NL3zJCsx5eWrP1KU",
+  "APPLE_SETTINGS":{
+    "apnsCertData":"",
+    "apnsKeyData": ""
+  },
+
+
+
+  "activate": true,
+  "services": {},
+  "dependencies": {},
+  "optionalDependencies": {},
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "devDependencies": {
+
+  }
+}
